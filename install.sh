@@ -10,7 +10,7 @@ print_banner() {
     \  /\  / ____ \| |\  | |__| |
      \/  \/_/    \_\_| \_|_____/ 
                                     
-      Wand Installation Script
+      Wand Installation Script for GitHub Codespaces
     '
 }
 print_banner
