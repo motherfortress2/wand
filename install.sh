@@ -130,7 +130,7 @@ fi
 
 echo "Done setting up the environment."
 echo "Downloading Game Files"
-git clone --recurse-submodules https://github.com/solero/wand && cd wand
+git clone --recurse-submodules https://github.com/motherfortress2/wand && cd wand
 echo "Done Downloading the game files."
 sudo rm -r .env
 
