@@ -51,13 +51,6 @@ fi
 read -p "Do you want to run the game when the installation ends? (Y/N): " run_game
 
 
-install_docker_official() {
-    echo "Installing Docker..."
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sudo sh get-docker.sh
-    sudo systemctl start docker
-    sudo systemctl enable docker
-}
 
 if [[ $(uname) == "Linux" ]]; then
     echo "Setting up the environment for Linux."
