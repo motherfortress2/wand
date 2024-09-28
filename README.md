@@ -1,5 +1,8 @@
 # wand
 
+> [!IMPORTANT]
+> If this works, it will open a new gate to inexperienced coders, so it's necessary to say, if you are inexperienced this is __NOT__ for you.
+
 Wand makes it easy to configure dash, houdini and a media server utilizing docker & docker-compose.
 
 > [!NOTE]
@@ -8,12 +11,12 @@ Wand makes it easy to configure dash, houdini and a media server utilizing docke
 ## Installation script
 **Step 1** run the script
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/solero/wand/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/motherfortress2/wand/master/install.sh)
 ```
 **Step 2** Answer Questions which are:
 * Database password (Leave blank for random password)
-* Hostname (example: `clubpenguin.com`) (Leave empty for localhost)
-* External IP Address (Leave empty for localhost)
+* Hostname (example: `clubpenguin.com`) (Leave empty for localhost) (This fork attempts to use the /play setup for free subdomain support. May not work but I tried.)
+* External IP Address (Leave empty for localhost) (If you don't know an external IP address, my best bet is to try some other source, I don't want people getting harmed.)
 **Step 3** Run and enjoy.
 Run this command:
 ```bash
@@ -22,7 +25,7 @@ $ cd wand && sudo docker-compose up
 ## Manual setup
 
 > [!IMPORTANT]
-> This is not recommended for beginners. If you're not sure what you're doing, use the install script.
+> This fork is for GH Codespaces, DO NOT USE THIS! Use the install script.
 
 **Step 1** Choose your Linux Distribution
 
