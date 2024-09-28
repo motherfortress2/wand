@@ -1,4 +1,4 @@
-# wand
+#  Wand Installation Script for GitHub Codespaces
 
 > [!IMPORTANT]
 > If this works, it will open a new gate to inexperienced coders, so it's necessary to say, if you are inexperienced this is __NOT__ for you.
