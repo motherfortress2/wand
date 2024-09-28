@@ -48,7 +48,7 @@ if [ -z "$ipadd" ]; then
     ipadd=127.0.0.1
 fi
 
-read -p "Do you want to run the game when the installation ends? (y/N): " run_game
+read -p "Do you want to run the game when the installation ends? (Y/N): " run_game
 
 
 install_docker_official() {
@@ -142,11 +142,11 @@ POSTGRES_PASSWORD=$dbpass
 WEB_PORT=80
 WEB_HOSTNAME=$hostname
 
-WEB_LEGACY_PLAY=http://old.$hostname
-WEB_LEGACY_MEDIA=http://legacy.$hostname
+WEB_LEGACY_PLAY=http://$hostname/old
+WEB_LEGACY_MEDIA=http://$hostname/legacy
 
-WEB_VANILLA_PLAY=http://play.$hostname
-WEB_VANILLA_MEDIA=http://media.$hostname
+WEB_VANILLA_PLAY=http://$hostname/play
+WEB_VANILLA_MEDIA=http://$hostname/media
 
 WEB_RECAPTCHA_SITE=
 WEB_RECAPTCHA_SECRET=
