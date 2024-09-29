@@ -1,8 +1,5 @@
 #  Wand Installation Script for GitHub Codespaces
 
-> [!NOTE]
-> May need to fork other things soon. nginx and all that.
-
 > [!IMPORTANT]
 > If this works, it will open a new gate to inexperienced coders, so it's necessary to say, if you are inexperienced this is __NOT__ for you.
 
