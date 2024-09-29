@@ -135,11 +135,11 @@ POSTGRES_PASSWORD=$dbpass
 WEB_PORT=80
 WEB_HOSTNAME=$hostname
 
-WEB_LEGACY_PLAY=http://$hostname/old
-WEB_LEGACY_MEDIA=http://$hostname/legacy
+WEB_LEGACY_PLAY=https://$hostname/old
+WEB_LEGACY_MEDIA=https://$hostname/legacy
 
-WEB_VANILLA_PLAY=http://$hostname/play
-WEB_VANILLA_MEDIA=http://$hostname/media
+WEB_VANILLA_PLAY=https://$hostname/play
+WEB_VANILLA_MEDIA=https://$hostname/media
 
 WEB_RECAPTCHA_SITE=
 WEB_RECAPTCHA_SECRET=
