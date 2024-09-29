@@ -1,6 +1,6 @@
 #  Wand Installation Script for GitHub Codespaces
 
-> [!IMPORTANT]
+> [!CAUTION]
 > If this works, it will open a new gate to inexperienced coders, so it's necessary to say, if you are inexperienced this is __NOT__ for you.
 
 Wand makes it easy to configure dash, houdini and a media server utilizing docker & docker-compose.
