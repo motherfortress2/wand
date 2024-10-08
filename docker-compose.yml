@@ -32,10 +32,10 @@ services:
     links:
       - dash:dash
     volumes:
-      - ./www:/usr/share/nginx/html
-      - ./legacy-media:/usr/share/nginx/legacy
-      - ./vanilla-media:/usr/share/nginx/vanilla
-      - ./servers.xml:/t/servers.xml
+      - ./www:./www
+      - ./legacy-media:./legacy-media
+      - ./vanilla-media:/./vanilla-media
+      - ./servers.xml:./servers.xml
 
       - ./templates/sites/legacy.conf.template:/etc/nginx/conf.d/legacy.conf.template
       - ./templates/sites/vanilla.conf.template:/etc/nginx/conf.d/vanilla.conf.template
@@ -77,8 +77,8 @@ services:
     ports:
       - ${GAME_LOGIN_PORT}:${GAME_LOGIN_PORT}
     volumes:
-      - ./houdini:/usr/src/houdini
-      - ./wait-for-postgres.sh:/usr/src/houdini/wait-for-postgres.sh
+      - ./houdini:./houdini
+      - ./wait-for-postgres.sh:./wait-for-postgres.sh
     depends_on:
       - db
       - redis
@@ -100,7 +100,7 @@ services:
     ports:
       - 9875:9875
     volumes:
-      - ./houdini:/usr/src/houdini
+      - ./houdini:./houdini
     depends_on:
       - houdini_login
     links:
@@ -122,7 +122,7 @@ services:
     ports:
       - 9876:9876
     volumes:
-      - ./houdini:/usr/src/houdini
+      - ./houdini:./houdini
     depends_on:
       - houdini_login
     links:
@@ -144,7 +144,7 @@ services:
     ports:
       - 9877:9877
     volumes:
-      - ./houdini:/usr/src/houdini
+      - ./houdini:./houdini
     depends_on:
       - houdini_login
     links:
@@ -166,7 +166,7 @@ services:
     ports:
       - 9878:9878
     volumes:
-      - ./houdini:/usr/src/houdini
+      - ./houdini:./houdini
     depends_on:
       - houdini_login
     links:
@@ -190,9 +190,9 @@ services:
     ports:
       - 3000
     volumes:
-      - ./dash:/usr/src/dash
-      - ./vanilla-media/media/avatar/paper:/usr/src/dash/items
-      - ./templates/dash/config.py.template:/usr/src/dash/config.py.template
+      - ./dash:./dash
+      - ./vanilla-media/media/avatar/paper:./vanilla-media/media/avatar/paper
+      - ./templates/dash/config.py.template:./templates/dash/config.py.template
     depends_on:
       - db
       - redis
@@ -220,7 +220,7 @@ services:
       - PORT=${SNOWFLAKE_PORT}
     volumes:
       - ./snowflake:/usr/src/snowflake
-      - ./.env:/usr/src/snowflake/.env
+      - ./.env:./.env
     depends_on:
       - db
       - redis
